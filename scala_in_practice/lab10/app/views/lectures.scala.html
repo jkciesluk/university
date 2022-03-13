@@ -1,0 +1,14 @@
+@(lectures: List[Lecture])
+
+@main("Lectures") {
+  <section id="top">
+      <div class="wrapper">
+        <ul>
+          @for(lecture <- lectures) {
+            <li>@lecture.name</li>
+          }
+        </ul>
+      </div>
+  </section>
+}
+
